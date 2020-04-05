@@ -9,3 +9,9 @@ answer[" $c+$a/$b "]=$((c+a/b))
 answer[" $a%$b+$c "]=$((a%b+c))
 echo "Expression "${!answer[@]}
 echo "Result stored in Dictionary : "${answer[@]}
+function Array()
+{
+        DictToArray=("${answer[*]}")
+        echo "array ; " ${DictToArray[*]}
+}
+Array
