@@ -14,9 +14,9 @@ function Array()
         DictToArray=("${answer[*]}")
         echo "array ; " ${DictToArray[*]}
 }
-function DescendingSort(){
-		descending=($(echo ${DictToArray[*]}| tr ' ' '\n' |sort -rn))
-		echo "Descending sort : ${descending[*]}"
+function AscendingSort(){
+		Ascending=($(echo ${DictToArray[*]}| tr ' ' '\n' |sort -r))
+		echo "Ascending sort : ${Ascending[*]}"
 		
 }
 Array
